@@ -15,4 +15,11 @@
         android:title="Settings"
         app:showAsAction="never"
         />
+
+    <item
+        android:id="@+id/menu_item_share"
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        />
 </menu>

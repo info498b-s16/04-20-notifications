@@ -32,11 +32,19 @@
 
         </activity>
 
+        <activity android:name=".SettingsActivity" android:parentActivityName="edu.uw.notsetdemo.MainActivity"
+            android:label="Settings">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.uw.notsetdemo.MainActivity" />
+        </activity>
+
         <receiver android:name="edu.uw.notsetdemo.MyReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BATTERY_LOW"/>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="edu.uw.notsetdemo.ACTION_SMS_STATUS" />
             </intent-filter>
         </receiver>
 

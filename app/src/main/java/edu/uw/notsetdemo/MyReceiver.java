@@ -1,5 +1,6 @@
 package edu.uw.notsetdemo;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -26,5 +27,14 @@ public class MyReceiver extends BroadcastReceiver {
         else if(intent.getAction() == Intent.ACTION_POWER_CONNECTED){
             Toast.makeText(context, "Power connected", Toast.LENGTH_SHORT).show();
         }
+        else if(intent.getAction() == MainActivity.ACTION_SMS_STATUS) {
+            if (getResultCode() == Activity.RESULT_OK) {
+                Toast.makeText(context, "Message sent!", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(context, "Error sending message", Toast.LENGTH_SHORT).show();
+            }
+        }
+
     }
 }
