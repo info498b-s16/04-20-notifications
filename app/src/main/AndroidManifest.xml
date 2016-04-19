@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.uw.intentdemo">
+    package="edu.uw.notsetdemo">
 
     <uses-permission android:name="android.permission.SEND_SMS"/>
 
@@ -10,18 +10,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="edu.uw.notsetdemo.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity" android:parentActivityName="edu.uw.intentdemo.MainActivity">
+        <activity android:name="edu.uw.notsetdemo.SecondActivity" android:parentActivityName="edu.uw.notsetdemo.MainActivity">
             <!-- for action bar back -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.uw.intentdemo.MainActivity" />
+                android:value="edu.uw.notsetdemo.MainActivity" />
 
             <intent-filter>
                 <action android:name="android.intent.action.DIAL"/>
@@ -32,7 +32,7 @@
 
         </activity>
 
-        <receiver android:name=".MyReceiver">
+        <receiver android:name="edu.uw.notsetdemo.MyReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BATTERY_LOW"/>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>

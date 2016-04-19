@@ -1,3 +1,3 @@
-# 04-18 Intent demo code
+# 04-20 Notifications and Settings demo code
 
-Code demoing Intents (with some SMS)
+Code demoing notifications, preferences, and settings
