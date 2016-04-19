@@ -1,4 +1,4 @@
-package edu.uw.intentdemo;
+package edu.uw.notsetdemo;
 
 import org.junit.Test;
 

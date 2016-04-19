@@ -1,4 +1,4 @@
-package edu.uw.intentdemo;
+package edu.uw.notsetdemo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

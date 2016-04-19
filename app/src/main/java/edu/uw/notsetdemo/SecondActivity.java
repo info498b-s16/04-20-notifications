@@ -1,4 +1,4 @@
-package edu.uw.intentdemo;
+package edu.uw.notsetdemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +18,7 @@ public class SecondActivity extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         if(extras != null){
-            String value = extras.getString("edu.uw.intentdemo.message");
+            String value = extras.getString("edu.uw.notsetdemo.message");
 
             if(value != null) {
                 TextView subtitle = (TextView) findViewById(R.id.txtSecond);
